@@ -1,0 +1,46 @@
+# ~/.config/eza.yml
+# Iconos y colores
+icons:
+  # Habilitar iconos
+  enable: true
+  # Espaciado entre icono y nombre
+  spacing: 1
+
+# Ordenamiento
+sort:
+  field: name
+  direction: ascending
+group-directories-first: true
+
+# Información mostrada
+long:
+  # Mostrar en formato largo
+  enable: true
+  # Mostrar permisos numéricos (octal)
+  numeric: false
+  # Mostrar tamaño de archivos
+  size: true
+  # Formato del tamaño
+  size-format: metric
+  # Mostrar fechas
+  date: relative
+  # Mostrar información git
+  git: true
+  # Mostrar headers de columnas
+  header: true
+
+# Colores
+color:
+  # Esquema de colores
+  theme: default
+  # Colores específicos
+  filetypes: true
+  # Resaltado de permisos
+  permissions: true
+
+# Filtros
+filters:
+  # No mostrar archivos ocultos por defecto
+  hidden: false
+  # No mostrar archivos del sistema (dot)
+  system: true

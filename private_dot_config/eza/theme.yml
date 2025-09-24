@@ -1,0 +1,52 @@
+# ~/.config/eza/theme.yml
+# Tema plano sin bold
+
+extensions:
+  png:   { foreground: White, is_bold: false }
+  jpg:   { foreground: White, is_bold: false }
+  jpeg:  { foreground: White, is_bold: false }
+  gif:   { foreground: White, is_bold: false }
+  webp:  { foreground: White, is_bold: false }
+
+
+filekinds:
+  normal:       { foreground: White,   is_bold: false }
+  directory:    { foreground: Blue,    is_bold: false }
+  symlink:      { foreground: Cyan,    is_bold: false }
+  executable:   { foreground: Green,   is_bold: false }
+  socket:       { foreground: Magenta, is_bold: false }
+  block_device: { foreground: Yellow,  is_bold: false }
+  char_device:  { foreground: Yellow,  is_bold: false }
+  pipe:         { foreground: Magenta, is_bold: false }
+  special:      { foreground: Red,     is_bold: false }
+
+users:
+  user:  { foreground: White,       is_bold: false }
+  group: { foreground: BrightBlack, is_bold: false }
+
+perms:
+  user_read:    { foreground: Green,  is_bold: false }
+  user_write:   { foreground: Yellow, is_bold: false }
+  user_exec:    { foreground: Red,    is_bold: false }
+  group_read:   { foreground: Green,  is_bold: false }
+  group_write:  { foreground: Yellow, is_bold: false }
+  group_exec:   { foreground: Red,    is_bold: false }
+  other_read:   { foreground: Green,  is_bold: false }
+  other_write:  { foreground: Yellow, is_bold: false }
+  other_exec:   { foreground: Red,    is_bold: false }
+  attribute:    { foreground: BrightBlack, is_bold: false }
+
+git:
+  new:        { foreground: Green,       is_bold: false }
+  modified:   { foreground: Yellow,      is_bold: false }
+  deleted:    { foreground: Red,         is_bold: false }
+  renamed:    { foreground: Cyan,        is_bold: false }
+  typechange: { foreground: Magenta,     is_bold: false }
+  ignored:    { foreground: BrightBlack, is_bold: false }
+  conflicted: { foreground: BrightRed,   is_bold: false }
+
+date:  { foreground: White, is_bold: false }
+size:  { foreground: White, is_bold: false }
+inode: { foreground: BrightBlack, is_bold: false }
+links: { foreground: BrightBlack, is_bold: false }
+
