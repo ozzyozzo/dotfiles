@@ -1,0 +1,9 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "d1c8baa"
+hash = "435a2af56ecfb3d05755fd5e24977d8b"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine-moon"
+rev = "aa2d937"
+hash = "97cd4819252cb1a9d0f55daa14e481e"
