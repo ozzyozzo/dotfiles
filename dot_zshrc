@@ -94,6 +94,8 @@ export PATH="$HOME/life/3_utils/3.2_scripts:$PATH"
 
 # Get color support for 'less'
 #export LESS="--RAW-CONTROL-CHARS"
-export LS_COLORS="$(vivid generate catppuccin-mocha)"
+#export LS_COLORS="$(vivid generate catppuccin-mocha)"
+export LS_COLORS="$(cat ~/.config/vivid/mi_tema.txt)"
+#export LS_COLORS="$(cat ~/.config/vivid/wezterm_theme.txt)"
 # Use colors for less, man, etc.
 #[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
