@@ -88,7 +88,10 @@ bindkey "^[^[[C" forward-word         # Ctrl+→ → mover una palabra a la dere
 bindkey "^[3;5~" kill-word            # Ctrl+Supr → borrar palabra hacia adelante
 bindkey "^[127;5u" backward-kill-word # Ctrl+Backspace → borrar palabra hacia atrás
 
+export PATH="$HOME/life/3_utils/3.2_scripts:$PATH"
 
+# Get color support for 'less'
+export LESS="--RAW-CONTROL-CHARS"
 
-
-
+# Use colors for less, man, etc.
+[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
