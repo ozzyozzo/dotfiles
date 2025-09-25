@@ -11,13 +11,11 @@ config.font_size = 14
 
 config.enable_tab_bar = false
 
--- config.window_decorations = "RESIZE"
+ config.window_decorations = "RESIZE"
 
 config.window_background_opacity = 0.8
 --only mac
 --config.macos_window_background_blur = 10
-
--- my coolnight colorscheme:
 config.colors = {
 	foreground = "#CBE0F0",
 	background = "#011423",

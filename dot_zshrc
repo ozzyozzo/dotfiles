@@ -90,8 +90,10 @@ bindkey "^[127;5u" backward-kill-word # Ctrl+Backspace → borrar palabra hacia 
 
 export PATH="$HOME/life/3_utils/3.2_scripts:$PATH"
 
-# Get color support for 'less'
-export LESS="--RAW-CONTROL-CHARS"
+#instalar vivid para el soporte de colores
 
+# Get color support for 'less'
+#export LESS="--RAW-CONTROL-CHARS"
+export LS_COLORS="$(vivid generate catppuccin-mocha)"
 # Use colors for less, man, etc.
 [[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
