@@ -16,6 +16,6 @@ config.enable_tab_bar = false
 config.window_background_opacity = 0.9
 
 config.colors = {
-	background = "011423"
+	background = "#011423"
 }
 return config
