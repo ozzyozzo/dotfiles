@@ -96,4 +96,4 @@ export PATH="$HOME/life/3_utils/3.2_scripts:$PATH"
 #export LESS="--RAW-CONTROL-CHARS"
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
 # Use colors for less, man, etc.
-[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
+#[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
