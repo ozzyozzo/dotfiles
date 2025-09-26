@@ -1,15 +1,3 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Configuración de autosuggestions
-#ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#5a5a5a'
 
 # ===== SYNTAX HIGHLIGHTING =====
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -29,19 +17,8 @@ setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 
-#plugins=(
-#    git
-#    zsh-autosuggestions
-#    zsh-syntax-highlighting
-#)
-
-#bindkey '^[[A^' history_search_backward
-#bindkey '^[[B^' history_search_forward
-#
-# ---- Zoxide (better cd) ----
 eval "$(zoxide init --cmd cd zsh)"
 
-#alias cd="z"
 
 # ---- Eza (better ls) -----
 
@@ -88,12 +65,15 @@ bindkey "^[^[[C" forward-word         # Ctrl+→ → mover una palabra a la dere
 bindkey "^[3;5~" kill-word            # Ctrl+Supr → borrar palabra hacia adelante
 bindkey "^[127;5u" backward-kill-word # Ctrl+Backspace → borrar palabra hacia atrás
 
-export TERM=xterm-256color
-export COLORTERM=truecolor
-export PATH="$HOME/life/3_utils/3.2_scripts:$PATH"
+#export TERM=xterm-256color
+#export COLORTERM=truecolor
+#export PATH="$HOME/life/3_utils/3.2_scripts:$PATH"
 
 #instalar vivid para el soporte de colores
 
-export LS_COLORS="$(vivid generate catppuccin-mocha)"
+#export LS_COLORS="$(vivid generate catppuccin-mocha)"
 
-export EZA_COLORS="da=0;38;2;186;194;222"
+#export EZA_COLORS="da=0;38;2;186;194;222"
+#
+eval "$(starship init zsh)"
+
