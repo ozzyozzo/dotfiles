@@ -18,6 +18,9 @@
 # I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
 # https://github.com/alacritty/alacritty/tree/master#configuration
 
+[env]
+  TERM = "xterm-256color"
+
 [window]
 
 opacity = 0.9
@@ -26,7 +29,7 @@ padding.x = 10
 padding.y = 10
 
 decorations = "Full"
-decorations_theme_variant = "Light" # "Dark"
+decorations_theme_variant = "Dark" # "Dark"
 
 [font]
 
@@ -37,7 +40,7 @@ bold.family = "MesloLGS NERD FONT"
 italic.family = "MesloLGS NERD FONT"
 bold_italic.family = "MesloLGS NERD FONT"
 
-size = 14.0
+size = 13.0
 
 # Tip: for inspiration, look for values in the source code files of your favorite VS Code themes, and use the color picker in
 # Google to test colors before setting a value, or simply using an editor such as VS Code where colors are displayed in a 
@@ -46,6 +49,5 @@ size = 14.0
 [general]
     import = [
         "~/.config/alacritty/themes/mytheme.toml",
-        # You can import multiple files if needed
-        # "~/.config/alacritty/themes/another_theme.toml",
     ]
+

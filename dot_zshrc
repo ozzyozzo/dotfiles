@@ -46,10 +46,10 @@ eval "$(zoxide init --cmd cd zsh)"
 # ---- Eza (better ls) -----
 
 
-alias ls='eza --colour=always --icons=auto --group-directories-first'
+alias ls='eza --colour=always --icons=auto  --group-directories-first'
 alias ll='eza -l --colour=always --icons=auto --group-directories-first --git'
 alias la='eza -a --colour=always --icons=auto --group-directories-first'
-alias lla='eza -la --colour=always --icons=auto --group-directories-last --git'
+alias lla='eza -la --colour=always --icons=auto --group-directories-first --git'
 alias lt='eza --tree --colour=always --icons=auto --group-directories-first'
 alias lta='eza --tree -a --colour=always --icons=auto --group-directories-first'
 
@@ -60,7 +60,7 @@ alias llag='eza -lag --colour=always --icons=auto --git --group-directories-firs
 # ------ ALIAS ÚTILES ------
 alias cat='bat'
 alias grep='grep --color=auto'
-alias nv='nvim'
+alias vim='nvim'
 alias n='nvim'
 
 # Usa el modo emacs (bindings estándar)
@@ -88,14 +88,12 @@ bindkey "^[^[[C" forward-word         # Ctrl+→ → mover una palabra a la dere
 bindkey "^[3;5~" kill-word            # Ctrl+Supr → borrar palabra hacia adelante
 bindkey "^[127;5u" backward-kill-word # Ctrl+Backspace → borrar palabra hacia atrás
 
+export TERM=xterm-256color
+export COLORTERM=truecolor
 export PATH="$HOME/life/3_utils/3.2_scripts:$PATH"
 
 #instalar vivid para el soporte de colores
 
-# Get color support for 'less'
-#export LESS="--RAW-CONTROL-CHARS"
-#export LS_COLORS="$(vivid generate catppuccin-mocha)"
-export LS_COLORS="$(cat ~/.config/vivid/mi_tema_editable.txt)"
-#export LS_COLORS="$(cat ~/.config/vivid/wezterm_theme.txt)"
-# Use colors for less, man, etc.
-#[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
+export LS_COLORS="$(vivid generate catppuccin-mocha)"
+
+export EZA_COLORS="da=0;38;2;186;194;222"
