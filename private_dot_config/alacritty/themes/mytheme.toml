@@ -1,12 +1,11 @@
 # From the famous Cobalt2 sublime theme
 # Source  https//github.com/wesbos/cobalt2/tree/master/Cobalt2
 
-# Default colors
-[colors.primary]
-background = '#122637'
-foreground = '#ffffff'
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_interval = 500
+blink_timeout = 10
+unfocused_hollow = true
+thickness = 0.2
 
-[colors.cursor]
-text = '#122637'
-cursor = '#47ff9c'
 
