@@ -62,13 +62,13 @@ bindkey "^[^[[C" forward-word         # Ctrl+→ → mover una palabra a la dere
 # --- Borrado por palabras ---
 bindkey "^[3;5~" kill-word            # Ctrl+Supr → borrar palabra hacia adelante
 bindkey "^[127;5u" backward-kill-word # Ctrl+Backspace → borrar palabra hacia atrás
-
+export PATH="$HOME/.local/bin:$PATH"
 #export TERM=xterm-256color
 #export COLORTERM=truecolor
-#export PATH="$HOME/life/3_utils/3.2_scripts:$PATH"
+export PATH="$HOME/life/3_utils/3.2_scripts:$PATH"
 
 #instalar vivid para el soporte de colores
-export LS_COLORS="$(vivid generate catppuccin-macchiato)"
+export LS_COLORS="$(vivid generate nord)"
 
 #export EZA_COLORS="da=0;38;2;186;194;222"
 #

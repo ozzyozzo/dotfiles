@@ -7,20 +7,19 @@ TERM = "xterm-256color"
 
 padding.x = 10
 padding.y = 10
-
 decorations = "Full"
 decorations_theme_variant = "Dark" # "Dark"
 
 [font]
 
-normal.family = "MesloLGS NERD FONT"
-bold.family = "MesloLGS NERD FONT"
-#normal.family = "JetBrains Nerd Font"
-#bold.family = "JetBrains Nerd Font"
-italic.family = "MesloLGS NERD FONT"
-bold_italic.family = "MesloLGS NERD FONT"
+#normal.family = "MesloLGS Nerd Font"
+#bold.family = "MesloLGS Nerd Font"
+normal.family = "Fira Code"
+bold.family = "Fira Code"
+italic.family = "Fira Code"
+bold_italic.family = "Fira Code"
 
-size = 14.0
+size = 12.0
 
 # Tip: for inspiration, look for values in the source code files of your favorite VS Code themes, and use the color picker in
 # Google to test colors before setting a value, or simply using an editor such as VS Code where colors are displayed in a 

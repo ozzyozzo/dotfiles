@@ -1,6 +1,6 @@
  return {
   {
-    "catppuccin/nvim",
+    "navarasu/onedark.nvim",
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       local bg = "#011628"
@@ -13,8 +13,8 @@
       local fg_gutter = "#627E97"
       local border = "#547998"
 
-      require("catppuccin").setup({
-        style = "latte",
+      require("onedark").setup({
+        style = "dark",
         on_colors = function(colors)
           colors.bg = bg
           colors.bg_dark = bg_dark
@@ -34,7 +34,7 @@
         end,
       })
       -- load the colorscheme here
-      vim.cmd([[colorscheme catppuccin]])
+      vim.cmd([[colorscheme onedark]])
     end,
   },
 } 
