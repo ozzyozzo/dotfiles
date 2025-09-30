@@ -1,0 +1,93 @@
+set nocompatible
+filetype off
+syntax on
+set number relativenumber
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set hlsearch
+set wildmenu
+" set colorcolumn=120
+" -------------------------
+" Indentación automática
+" -------------------------
+set autoindent       " Copia la indentación de la línea anterior
+set smartindent      " Añade indent inteligente para bloques
+set smarttab         " Tab inteligentes según indent
+
+" -------------------------------------------------
+" Salir de insert mode
+" -------------------------------------------------
+" jk para salir de insert mode
+inoremap jk <Esc> 
+
+" -------------------------------------------------
+" Entrar a command-line mode desde insert
+" -------------------------------------------------
+" jj para abrir : desde insert
+inoremap jj <Esc>:
+" Ctrl-l para ejecutar comando rápido sin salir de insert
+inoremap <C-l> <C-o>:
+
+" ------------------------------------------------
+" Nueva línea en insert mode
+" ------------------------------------------------
+" Ctrl-j -> nueva línea abajo con indent
+inoremap <C-j> <Esc>o
+" Ctrl-k -> nueva línea arriba con indent
+inoremap <C-k> <Esc>O
+
+" ---------------------------
+"  sudo yay -S vim-airline nord-vim-airline nord-vim
+" ---------------------------
+set laststatus=2
+set termguicolors
+colorscheme nord
+let g:airline_theme='nord'
+
+"call plug#begin()
+"  Plug 'https://github.com/vim-airline/vim-airline'
+"  Plug 'https://github.com/vim-airline/vim-airline-themes'
+"  Plug 'arcticicestudio/nord-vim'
+"call plug#end()
+"let g:airline_powerline_fonts = 1
+
+" Airline con símbolos Powerline
+let g:airline_powerline_fonts = 1
+
+" Tema Nord
+let g:airline_theme = 'nord'
+
+" Opcional: mostrar solo lo esencial si usas ventana chica
+let g:airline_section_a = airline#section#create(['mode'])
+let g:airline_section_b = ''
+let g:airline_section_c = airline#section#create(['%f'])  " solo nombre de archivo
+let g:airline_section_x = ''
+let g:airline_section_y = ''
+let g:airline_section_z = airline#section#create(['%l:%c'])
+
+
+
+let g:airline#extensions#default#section_truncate_width = {
+      \ 'a': 30,
+      \ 'b': 40,
+      \ 'x': 60,
+      \ 'y': 80,
+      \ 'z': 90,
+      \ }
+" Siempre mostrar el modo completo (NORMAL, INSERT, VISUAL, etc.)
+let g:airline_mode_map = {
+      \ '__'     : '-',
+      \ 'n'      : 'NORMAL',
+      \ 'i'      : 'INSERT',
+      \ 'R'      : 'REPLACE',
+      \ 'v'      : 'VISUAL',
+      \ 'V'      : 'V-LINE',
+      \ "\<C-v>" : 'V-BLOCK',
+      \ 'c'      : 'COMMAND',
+      \ 's'      : 'SELECT',
+      \ 'S'      : 'S-LINE',
+      \ "\<C-s>" : 'S-BLOCK',
+      \ 't'      : 'TERMINAL',
+      \ }
+
