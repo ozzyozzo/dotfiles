@@ -52,42 +52,6 @@ let g:airline_theme='nord'
 "call plug#end()
 "let g:airline_powerline_fonts = 1
 
-" Airline con símbolos Powerline
+" Airline con símbolos Powerline funciona con full nerd font, como fira code
 let g:airline_powerline_fonts = 1
-
-" Tema Nord
-let g:airline_theme = 'nord'
-
-" Opcional: mostrar solo lo esencial si usas ventana chica
-let g:airline_section_a = airline#section#create(['mode'])
-let g:airline_section_b = ''
-let g:airline_section_c = airline#section#create(['%f'])  " solo nombre de archivo
-let g:airline_section_x = ''
-let g:airline_section_y = ''
-let g:airline_section_z = airline#section#create(['%l:%c'])
-
-
-
-let g:airline#extensions#default#section_truncate_width = {
-      \ 'a': 30,
-      \ 'b': 40,
-      \ 'x': 60,
-      \ 'y': 80,
-      \ 'z': 90,
-      \ }
-" Siempre mostrar el modo completo (NORMAL, INSERT, VISUAL, etc.)
-let g:airline_mode_map = {
-      \ '__'     : '-',
-      \ 'n'      : 'NORMAL',
-      \ 'i'      : 'INSERT',
-      \ 'R'      : 'REPLACE',
-      \ 'v'      : 'VISUAL',
-      \ 'V'      : 'V-LINE',
-      \ "\<C-v>" : 'V-BLOCK',
-      \ 'c'      : 'COMMAND',
-      \ 's'      : 'SELECT',
-      \ 'S'      : 'S-LINE',
-      \ "\<C-s>" : 'S-BLOCK',
-      \ 't'      : 'TERMINAL',
-      \ }
 

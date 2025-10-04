@@ -12,8 +12,6 @@ decorations_theme_variant = "Dark" # "Dark"
 
 [font]
 
-#normal.family = "MesloLGS Nerd Font"
-#bold.family = "MesloLGS Nerd Font"
 normal.family = "Fira Code"
 bold.family = "Fira Code"
 italic.family = "Fira Code"
@@ -28,5 +26,6 @@ size = 12.0
 [general]
     import = [
         "~/.config/alacritty/themes/mytheme.toml",
+        #"~/.config/alacritty/themes/nordtheme.yaml",
     ]
 
